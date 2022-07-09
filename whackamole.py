@@ -189,7 +189,8 @@ with mp_pose.Pose(
                 # print('\n시작',start_time)
                 time_remaining = int(time_given - (present_time - start_time))
 
-                if (rx0-50 < righthand[0] < rx0+50 and ry0-50 < righthand[1] < ry0+50) or (rx0-50 < lefthand[0] < rx0+50 and ry0-50 < lefthand[1] < ry0+50) :
+                if (rx0-50 < righthand[0] < rx0+50 and ry0-50 < righthand[1] < ry0+50) 
+                    or (rx0-50 < lefthand[0] < rx0+50 and ry0-50 < lefthand[1] < ry0+50) :
                     overlay(image, rx0, ry0, 50, 50, shine_image)
                     score += 1
                     whack_sound.play()
@@ -198,7 +199,8 @@ with mp_pose.Pose(
                     r0.append(rx0)
                     r0.append(ry0)
                  
-                if (rx1-50 < righthand[0] < rx1+50 and ry1-50 < righthand[1] < ry1+50) or (rx1-50 < lefthand[0] < rx1+50 and ry1-50 < lefthand[1] < ry1+50) :
+                if (rx1-50 < righthand[0] < rx1+50 and ry1-50 < righthand[1] < ry1+50) 
+                    or (rx1-50 < lefthand[0] < rx1+50 and ry1-50 < lefthand[1] < ry1+50) :
                     overlay(image, rx1, ry1, 50, 50, shine_image)
                     score += 1
                     whack_sound.play()
